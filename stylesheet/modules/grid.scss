@@ -1,0 +1,29 @@
+.grid {
+    margin-left: -32px;
+}
+
+.grid__col {
+    padding-left: 32px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid__col--6 {
+    width: 50%;
+}
+
+.grid__col--4 {
+    width: 33.3333333%;
+}
+
+.grid.grid--middle > .grid__col {
+    vertical-align: middle;
+}
+
+.grid.grid--large {
+    margin-left: -64px;
+}
+
+.grid.grid--large > .grid__col {
+    padding-left: 64px;
+}

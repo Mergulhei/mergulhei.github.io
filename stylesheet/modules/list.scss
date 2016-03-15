@@ -1,0 +1,9 @@
+.list {
+	&--inline {
+		display: block;
+
+		> li {
+			display: inline-block;
+		}
+	}
+}

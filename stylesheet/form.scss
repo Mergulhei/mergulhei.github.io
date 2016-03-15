@@ -1,0 +1,70 @@
+.form{
+ 	background-color: #EBF7FC;
+	padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.form--input-text, .form--textarea {
+    font-size: 16px;
+    color: #695AC0;
+    padding: 20px 0;
+    border-radius: 4px;
+    border: none;
+    width: 296px;
+    margin-bottom: 16px;
+}
+
+.form--input-text::-webkit-input-placeholder,
+.form--textarea::-webkit-input-placeholder {
+    color: #695AC0;
+}
+
+.form--input-text:-moz-placeholder {
+   color: #695AC0;
+}
+
+.form--input-text::-moz-placeholder {
+   color: #695AC0;
+}
+
+.form--input-text:-ms-input-placeholder {
+   color: #695AC0;
+}
+
+.form--input-text-icon,
+.form--textarea-icon {
+    display: inline-block;
+    background-color: white;
+    width: 56px;
+    height: 58px;
+}
+
+.form--textarea-icon {
+    height: 160px;
+}
+
+.form--textarea {
+    width: 664px;
+    height: 120px;
+}
+
+.form--input__prepend > *:first-child {
+    border-radius: 4px 0px 0px  4px;
+    float: left;
+}
+
+.form--input__prepend > *:last-child{
+    border-radius: 0px 4px 4px  0px;
+}
+
+.form form{
+    margin: 0 auto;
+    width: 720px;
+}
+
+.form--btn{
+    width: 720px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 16px 0;
+}

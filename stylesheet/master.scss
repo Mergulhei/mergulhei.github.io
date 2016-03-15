@@ -1,0 +1,58 @@
+$purple: #695AC0;
+$purple-light: #887ADA;
+$blue-dark: #335E7D;
+$blue-light: #EBF7FC;
+$gray: #7A7A7A;
+$gray-light: #F1F0F5;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+    line-height: 1.41;
+    font-family: "FuturaStd";
+    color: $gray;
+    background-color: white;
+}
+
+
+@import './modules/banner';
+@import './modules/bg';
+@import './modules/btn';
+@import './modules/container';
+@import './modules/grid';
+@import './modules/list';
+@import './modules/spacing';
+@import './modules/sprite';
+@import './modules/text';
+@import './modules/timeline';
+
+
+// .page{
+//     background-color: white;
+//     font-family: "FuturaStd-Book";
+// }
+
+// .bg--gray {
+//     background-color: #F1F0F5;
+// }
+
+// .site-nav{
+//     display: block;
+//     padding: 24px 0px;
+// }
+
+// .site-nav--item{
+//     display: inline-block;
+// }
+
+// .float__right {
+//     float: right;
+// }
+
+// .float__left {
+//     float: left;
+// }

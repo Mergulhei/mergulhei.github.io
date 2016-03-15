@@ -1,0 +1,55 @@
+.text {
+    &--left {
+        text-align: left;
+    }
+
+    &--right{
+        text-align: right;
+    }
+
+    &--center{
+        text-align: center;
+    }
+
+    &--title {
+        font-size: 34px;
+        font-weight: 100;
+        margin-bottom: 16px;
+    }
+
+    &--detail {
+        font-size: 14px;
+    }
+
+    &--gray {
+        color: $gray;
+    }
+
+    &--purple {
+        color: $purple;
+    }
+
+    &--blue-dark {
+        color: $blue-dark;
+    }
+
+    // &__description{
+    //     color: #7a7a7a;
+    //     line-height: 30px;
+    //     font-size: 16px;
+    // }
+
+    // &__sub-title{
+    //     color: #335E7D;
+    //     font-size: 16px;
+    //     font-weight: lighter;
+    // }
+
+    // &--small{
+    //     color: #335E7D;
+    //     font-size: 14px;
+    //     font-family: "FuturaStd-Book";
+    //     font-weight: lighter;
+    //     line-height: 24px;
+    // }
+}

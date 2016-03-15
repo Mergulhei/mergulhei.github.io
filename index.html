@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="fonte.css">
 
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Mergulhei</title>
 
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
@@ -32,40 +32,44 @@
 
 </head>
 <body class="page" onload="init();">
-    <header class="">
-
-        <nav>
-            <div class="container site-nav">
-                <img class="site-nav--item" src="images/logo.png">
-
-                <div class="site-nav--item float__right">
-                    <a class="btn btn__colored " href="">Cadastro</a>
-                    <a class="btn btn__white margin__left" href="">Login</a>
+    <header>
+        <div class="container pt+ pb+">
+            <div class="grid grid--middle">
+                <div class="grid__col grid__col--6">
+                    <img src="images/logo.png" style="display: block;">
+                </div><div class="grid__col grid__col--6">
+                    <nav class="text--right">
+                        <a class="btn btn__colored" href="">Cadastro</a>
+                        <a class="btn btn__white margin__left" href="">Login</a>
+                    </nav>
                 </div>
-
-            </div>
-        </nav>
-
-        <div class="banner">
-            <div class="container">
-                <div class="float__left banner--text">
-                    <h2 class="banner--title">Ganhe dinheiro com seu conteúdo</h2>
-                    <p class="banner--p">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
-
-                    <a class="btn btn__large btn__transparent" href="#how-works">Como funciona</a>
-                    <a class="btn btn__large btn__colored" href="">Crie sua conta grátis</a>
-                </div>
-
-                <canvas id="canvas" width="650" height="560" style="background-color:#FFFFFF"></canvas>
             </div>
         </div>
 
+
+
     </header>
+    <section class="banner">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__col grid__col--6">
+                    <h2 class="banner--title pt+++">Ganhe dinheiro com seu conteúdo</h2>
+                    <p class="mb++">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
+
+                    <a class="btn btn__large btn__transparent" href="#how-works">Como funciona</a>
+                    <a class="btn btn__large btn__colored" href="">Crie sua conta grátis</a>
+                </div><div class="grid__col grid__col--6">
+
+                <canvas id="canvas" width="650" height="560" style="display: block;"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Entenda o Merguhei-->
     <section id="know-it">
         <div class="container pt+++">
-            <h2 class="know-it--h2">Entenda o Mergulhei</h2>
+            <h2 class="text--purple text--center">Entenda o Mergulhei</h2>
 
             <div class="timeline">
                 <div class="timeline__line"></div>
@@ -74,8 +78,8 @@
                 <div class="grid grid--middle grid--large">
                     <div class="grid__col grid__col--6">
                         <div class="pr+++">
-                            <h3 class="title">Você tem um site ou um blog e quer ganhar dinheiro com ele?</h3>
-                            <p class="text__description">O Mergulhei é uma ferramenta que ajuda produtores de conteúdo e publishers em geral a monetizar seu conteúdo divulgando produtos dos nossos parceiros.</p>
+                            <h3 class="text--title text--purple">Você tem um site ou um blog e quer ganhar dinheiro com ele?</h3>
+                            <p>O Mergulhei é uma ferramenta que ajuda produtores de conteúdo e publishers em geral a monetizar seu conteúdo divulgando produtos dos nossos parceiros.</p>
                         </div>
                     </div><div class="grid__col grid__col--6">
                         <div class="text--center"><img src="images/img1.png"></div>
@@ -84,7 +88,7 @@
             </div>
         </div>
 
-        <div class="bg--gray">
+        <div class="bg--gray-light">
             <div class="container">
                 <div class="timeline">
                     <div class="timeline__line"></div>
@@ -95,8 +99,8 @@
                             <div class="text--center"><img src="images/img2.png"></div>
                         </div><div class="grid__col grid__col--6">
                             <div class="pl+++">
-                                <h3 class="title text--right">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
-                                <p class="text__description text--right">Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
+                                <h3 class="text--title text--purple text--right">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
+                                <p class="text--right">Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
                             </div>
                         </div>
                     </div>
@@ -112,8 +116,8 @@
                 <div class="grid grid--middle grid--large">
                     <div class="grid__col grid__col--6">
                         <div class="pr+++">
-                            <h3 class="title">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
-                            <p class="text__description">Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
+                            <h3 class="text--title text--purple">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
+                            <p>Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
                         </div>
                     </div><div class="grid__col grid__col--6">
                         <div class="text--center"><img src="images/img3.png"></div>
@@ -128,23 +132,23 @@
 
     <!--Como funciona-->
 
-    <section id="how-works" class="how-works">
+    <section id="how-works" class="bg--blue-light pb+++ pt+++">
         <div class="container">
-            <h3 class="title text--center">Ative o Mergulhei e deixa o resto com a gente!</h3>
-            <h2 class="text--center text__sub-title mb+++">Entenda como funciona</h2>
+            <h3 class="text--title text--blue-dark text--center">Ative o Mergulhei e deixa o resto com a gente!</h3>
+            <h2 class="text--center text--blue-dark mb+++">Entenda como funciona</h2>
 
             <div class="grid">
                 <div class="grid__col grid__col--4">
                     <div class="circle--icon mha mb++"></div>
-                    <h4 class="text__sub-title mb++ text--center">1. Ative o Mergulhei no seu site</h4>
+                    <h4 class="text--blue-dark mb++ text--center">1. Ative o Mergulhei no seu site</h4>
                     <p class="text--small text--center">Após criar sua conta no Mergulhei, você instala o JavaScript no seu site e pronto! Nós começamos a facilitar sua vida!</p>
                 </div><div class="grid__col grid__col--4">
                     <div class="circle--icon mha mb++"></div>
-                    <h4 class="text__sub-title mb++ text--center">2. Adicione os links no seu conteúdo</h4>
+                    <h4 class="text--blue-dark mb++ text--center">2. Adicione os links no seu conteúdo</h4>
                     <p class="text--small text--center">Com o código do Mergulhei já instalado, você só precisa se preocupar em produzir conteúdos focados no perfil dos seus leitores e adicionar os links relacionados aos produtos ou lojas parceiras do Mergulhei.</p>
                 </div><div class="grid__col grid__col--4">
                     <div class="circle--icon mha mb++"></div>
-                    <h4 class="text__sub-title mb++ text--center">3. Agora é só acompanhar as vendas</h4>
+                    <h4 class="text--blue-dark mb++ text--center">3. Agora é só acompanhar as vendas</h4>
                     <p class="text--small text--center">A mágica acontece quando seus leitores clicam em um link que o levará a alguma loja parceira do Mergulhei. Toda vez que esse clique se transforma em compra, o Mergulhei paga uma comissão a você pela venda. Simples assim! :)</p>
                 </div>
             </div>
@@ -155,28 +159,34 @@
 
 
     <!-- Comentários-->
-    <section id="comments" class="comments">
+    <section id="comments" class="comments pb+++ pt+++">
         <div class="container">
-            <h3 class="title text--center">Deixe que digam, que pensem, que falem :)</h3>
+            <h3 class="text--title text--center text--purple">Deixe que digam, que pensem, que falem :)</h3>
 
-            <h2 class="text--center text__sub-title mb++">O que andam falando da gente</h2>
+            <h2 class="text--center text--purple mb++">O que andam falando da gente</h2>
 
             <div class="grid">
-                <div class="grid__col grid__col--4">
+                <div class="grid__col grid__col--4 text--center">
+
                     <p class="comments--text mb++">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
-                    <img src="images/foto1.jpg" class="margin__center mb+">
-                    <p class="comments--text__gray">Fulano de Tal</p>
-                    <p class="comments--text__gray text--small">Função</p>
-                </div><div class="grid__col grid__col--4">
+                    <img src="images/foto1.jpg" class="mb+">
+                    <p>Fulano de Tal</p>
+                    <p class="text--detail text--small">Função</p>
+                
+                </div><div class="grid__col grid__col--4 text--center">
+                
                     <p class="comments--text mb++">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
-                    <img src="images/foto2.jpg" class="margin__center mb+">
-                    <p class="comments--text__gray">Fulano de Tal</p>
-                    <p class="comments--text__gray text--small">Função</p>
-                </div><div class="grid__col grid__col--4">
+                    <img src="images/foto2.jpg" class="mb+">
+                    <p>Fulano de Tal</p>
+                    <p class="text--detail text--small">Função</p>
+                
+                </div><div class="grid__col grid__col--4 text--center">
+                
                     <p class="comments--text mb++">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
-                    <img src="images/foto3.jpg" class="margin__center mb+">
-                    <p class="comments--text__gray">Fulano de Tal</p>
-                    <p class="comments--text__gray text--small">Função</p>
+                    <img src="images/foto3.jpg" class="mb+">
+                    <p>Fulano de Tal</p>
+                    <p class="text--detail text--small">Função</p>
+                
                 </div>
             </div>
         </div>
@@ -184,12 +194,11 @@
     <!-- Fim comentários-->
 
     <!--Partners-->
-    <section id="partners" class="container partners">
+    <section id="partners" class="container pb+++">
 
-        <h2 class="title text--center margin__bottom">Mais de 200 lojas parceiras</h2>
-        <h3 class="text--center text__sub-title mb++">Todas as lojas que você ama estão aqui</h3>
-
-        <ul>
+        <h2 class="text--title text--center text--purple mb+">Mais de 200 lojas parceiras</h2>
+        <h3 class="text--center text--purple mb++">Todas as lojas que você ama estão aqui</h3>
+        <ul class="list--inline text--center pb++">
             <li><i class="sprite-store sprite-store--submarino"></i></li>
             <li><i class="sprite-store sprite-store--zattini"></i></li>
             <li><i class="sprite-store sprite-store--azul"></i></li>
@@ -205,16 +214,16 @@
             <li><i class="sprite-store sprite-store--natura"></i></li>
             <li><i class="sprite-store sprite-store--bahia"></i></li>
         </ul>
-        <div class="clear__left"></div>
+        <p class="text--center text--purple">E muito mais!</p>
     </section>
     <!-- End Partners-->
 
     <!--Contact form-->
 
-    <section id="contact" class="form">
+    <section id="contact" class="form bg--gray-light">
         <div class="container">
-            <h3 class="title text--center mb++">A gente adora conversar!</h3>
-            <h2 class="text__sub-title text--center mb++">Entre em contato com a gente</h2>
+            <h3 class="text--title text--center text--purple mb++ pt+++">A gente adora conversar!</h3>
+            <h2 class="text--center text--purple mb++">Entre em contato com a gente</h2>
 
             <form>
                 <div class="form--input__prepend float__left margin__right">
