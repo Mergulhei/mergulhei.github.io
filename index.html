@@ -2,249 +2,268 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
 
-	<link rel="stylesheet" type="text/css" href="fonte.css">
+    <link rel="stylesheet" type="text/css" href="fonte.css">
 
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<title>Mergulhei</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Mergulhei</title>
 
-	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-	<script src="animacao-blogueiro.js?1457637791634"></script>
-	<script>
-	var canvas, stage, exportRoot;
-	function init() {
-		// --- write your JS code here ---
-		
-		canvas = document.getElementById("canvas");
-		exportRoot = new lib.animacaoblogueiro();
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="animacao-blogueiro.js?1457637791634"></script>
+    <script>
+    var canvas, stage, exportRoot;
+    function init() {
+        // --- write your JS code here ---
 
-		stage = new createjs.Stage(canvas);
-		stage.addChild(exportRoot);
-		stage.update();
+        canvas = document.getElementById("canvas");
+        exportRoot = new lib.animacaoblogueiro();
 
-		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
 
-	</script>
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+    }
+
+    </script>
 
 </head>
 <body class="page" onload="init();">
-	<header class="">
-		
-		<nav>
-			<div class="container site-nav">
-				<img class="site-nav--item" src="images/logo.png">
+    <header class="">
 
-				<div class="site-nav--item float__right">
-					<a class="btn btn__colored " href="">Cadastro</a>
-					<a class="btn btn__white margin__left" href="">Login</a>
-				</div>
+        <nav>
+            <div class="container site-nav">
+                <img class="site-nav--item" src="images/logo.png">
 
-			</div>
-		</nav>
+                <div class="site-nav--item float__right">
+                    <a class="btn btn__colored " href="">Cadastro</a>
+                    <a class="btn btn__white margin__left" href="">Login</a>
+                </div>
 
-		<div class="banner">
-			<div class="container">
-				<div class="float__left banner--text">
-					<h2 class="banner--title">Ganhe dinheiro com seu conteúdo</h2>
-					<p class="banner--p">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
+            </div>
+        </nav>
 
-					<a class="btn btn__large btn__transparent" href="#how-works">Como funciona</a>
-					<a class="btn btn__large btn__colored" href="">Crie sua conta grátis</a>
-				</div>
-				
-				<canvas id="canvas" width="650" height="560" style="background-color:#FFFFFF"></canvas>
-			</div>
-		</div>
+        <div class="banner">
+            <div class="container">
+                <div class="float__left banner--text">
+                    <h2 class="banner--title">Ganhe dinheiro com seu conteúdo</h2>
+                    <p class="banner--p">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
 
-	</header>
+                    <a class="btn btn__large btn__transparent" href="#how-works">Como funciona</a>
+                    <a class="btn btn__large btn__colored" href="">Crie sua conta grátis</a>
+                </div>
 
-	<!--Entenda o Merguhei-->
-	<section id="know-it" class="know-it">
-		<h2 class="know-it--h2">Entenda o Mergulhei</h2>
-		<div class="know-it--container">
-			<div class="know-it--line"></div>
-			<div class="">
-				<div class="container know-it--item">
-					<div class="know-it--ball know-it--ball__center"></div>
-					<div class="know-it--col text__left">
-						<h3 class="title padding-bottom__24">Você tem um site ou um blog e quer ganhar dinheiro com ele?</h3>
-						<p class="text__description">O Mergulhei é uma ferramenta que ajuda produtores de conteúdo e publishers em geral a monetizar seu conteúdo divulgando produtos dos nossos parceiros.</p>
-					</div>
-					<div class="know-it--col"><img src="images/img1.png"></div>
-				</div>
-			</div>
+                <canvas id="canvas" width="650" height="560" style="background-color:#FFFFFF"></canvas>
+            </div>
+        </div>
 
-			<div class="know-it--item__gray">
-				<div class="container know-it--item">
-					<div class="know-it--ball know-it--ball__center"></div>
-					<div class="know-it--col"><img src="images/img2.png"></div>
-					<div class="know-it--col text__right">
-						<h3 class="title padding-bottom__24">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
-						<p class="text__description">Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
-					</div>
-				</div>
-			</div>
+    </header>
 
-			<div class="know-it--item">
-				<div class="container">
-					<div class="know-it--col text__left">
-						<h3 class="title padding-bottom__24">Rentabilize seu conteúdo através do Mergulhei</h3>
-						<p class="text__description">Você que tem um blog ou um site pode rentabilizar seu conteúdo através do Mergulhei de forma simples e sem perder o foco no que você faz de melhor: escrever seus posts e criar pautas interessantes para seus leitores - enquanto isso, você desfruta de todos os benefícios do Mergulhei.</p>
-					</div>
-					<div class="know-it--col"><img src="images/img3.png"></div>
-				</div>
-			</div>
-		</div>
-		<div class="know-it--signup text__center">
-			<div class="know-it--ball know-it--ball__margin"></div>
-			<a class="btn btn__purple btn__xlarge" href="">Crie sua conta. É grátis!</a>
-		</div>
-	</section>
-	<!--Fim Entenda-->
+    <!--Entenda o Merguhei-->
+    <section id="know-it">
+        <div class="container pt60">
+            <h2 class="know-it--h2">Entenda o Mergulhei</h2>
 
+            <div class="timeline">
+                <div class="timeline__line"></div>
+                <div class="timeline__ball"></div>
 
-	<!--Como funciona-->
+                <div class="grid grid--middle grid--large">
+                    <div class="grid__col grid__col--6">
+                        <div class="pr60">
+                            <h3 class="title">Você tem um site ou um blog e quer ganhar dinheiro com ele?</h3>
+                            <p class="text__description">O Mergulhei é uma ferramenta que ajuda produtores de conteúdo e publishers em geral a monetizar seu conteúdo divulgando produtos dos nossos parceiros.</p>
+                        </div>
+                    </div><div class="grid__col grid__col--6">
+                        <div class="text--center"><img src="images/img1.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<section id="how-works" class="how-works">
-		<h3 class="title text__center margin__bottom">Ative o Mergulhei e deixa o resto com a gente!</h3>
-		<h2 class="text__center text__sub-title padding-bottom__24">Entenda como funciona</h2>
+        <div class="bg--gray">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline__line"></div>
+                    <div class="timeline__ball"></div>
 
-		<div class="container">
+                    <div class="grid grid--middle grid--large">
+                        <div class="grid__col grid__col--6">
+                            <div class="text--center"><img src="images/img2.png"></div>
+                        </div><div class="grid__col grid__col--6">
+                            <div class="pl60">
+                                <h3 class="title text--right">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
+                                <p class="text__description text--right">Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="how-works--col float__left">
-				<div class="circle--icon margin__center margin__bottom--big"></div>
+        <div class="container pb60">
+            <div class="timeline timeline--end mb16">
+                <div class="timeline__line"></div>
+                <div class="timeline__ball"></div>
 
-				<h4 class="text__sub-title padding-bottom__24">1. Ative o Mergulhei no seu site</h4>
-				<p class="text__small">Após criar sua conta no Mergulhei, você instala o JavaScript no seu site e pronto! Nós começamos a facilitar sua vida!</p>
-			</div>
-
-			<div class="how-works--col float__left">
-				<div class="circle--icon margin__center margin__bottom--big"></div>
-				<h4 class="text__sub-title padding-bottom__24">2. Adicione os links no seu conteúdo</h4>
-				<p class="text__small">Com o código do Mergulhei já instalado, você só precisa se preocupar em produzir conteúdos focados no perfil dos seus leitores e adicionar os links relacionados aos produtos ou lojas parceiras do Mergulhei.</p>
-			</div>
-
-			<div class="how-works--col">
-				<div class="circle--icon margin__center margin__bottom--big"></div>
-				<h4 class="text__sub-title padding-bottom__24">3. Agora é só acompanhar as vendas</h4>
-				<p class="text__small">A mágica acontece quando seus leitores clicam em um link que o levará a alguma loja parceira do Mergulhei. Toda vez que esse clique se transforma em compra, o Mergulhei paga uma comissão a você pela venda. Simples assim! :)</p>
-			</div>
-		</div>
-
-	</section>
-	<!--Fim Como Funciona-->
+                <div class="grid grid--middle grid--large">
+                    <div class="grid__col grid__col--6">
+                        <div class="pr60">
+                            <h3 class="title">Instale o Mergulhei no seu site e comece a ganhar dinheiro.</h3>
+                            <p class="text__description">Todas as vezes que seus leitores clicarem em um link disponível na sua página relacionada a produtos disponíveis nas lojas parceiras do Mergulhei e realizarem a compra, você receberá comissão sobre a venda.</p>
+                        </div>
+                    </div><div class="grid__col grid__col--6">
+                        <div class="text--center"><img src="images/img3.png"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text--center"><a class="btn btn__purple btn__xlarge" href="">Crie sua conta. É grátis!</a></p>
+        </div>
+    </section>
+    <!--Fim Entenda-->
 
 
-	<!-- Comentários-->
-	<section id="comments" class="container comments">
+    <!--Como funciona-->
 
-		<h3 class="title text__center margin__bottom">Deixe que digam, que pensem, que falem :)</h3>
+    <section id="how-works" class="how-works">
+        <h3 class="title text__center margin__bottom">Ative o Mergulhei e deixa o resto com a gente!</h3>
+        <h2 class="text__center text__sub-title padding-bottom__24">Entenda como funciona</h2>
 
-		<h2 class="text__center text__sub-title padding-bottom__24">O que andam falando da gente</h2>
+        <div class="container">
 
-		<div class="comments--col float__left">
-			<p class="comments--text padding-bottom__24">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
-			<img src="images/foto1.jpg" class="margin__center padding-bottom__24">
-			<p class="comments--text__gray">Fulano de Tal</p>
-			<p class="comments--text__gray comments--text__small">Função</p>
-		</div>
+            <div class="how-works--col float__left">
+                <div class="circle--icon margin__center margin__bottom--big"></div>
 
-		<div class="comments--col float__left">
-			<p class="comments--text padding-bottom__24">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
-			<img src="images/foto2.jpg" class="margin__center padding-bottom__24">
-			<p class="comments--text__gray">Fulano de Tal</p>
-			<p class="comments--text__gray comments--text__small">Função</p>
-		</div>
+                <h4 class="text__sub-title padding-bottom__24">1. Ative o Mergulhei no seu site</h4>
+                <p class="text__small">Após criar sua conta no Mergulhei, você instala o JavaScript no seu site e pronto! Nós começamos a facilitar sua vida!</p>
+            </div>
 
-		<div class="comments--col">
-			<p class="comments--text padding-bottom__24">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
-			<img src="images/foto3.jpg" class="margin__center padding-bottom__24">
-			<p class="comments--text__gray">Fulano de Tal</p>
-			<p class="comments--text__gray comments--text__small">Função</p>
-		</div>
+            <div class="how-works--col float__left">
+                <div class="circle--icon margin__center margin__bottom--big"></div>
+                <h4 class="text__sub-title padding-bottom__24">2. Adicione os links no seu conteúdo</h4>
+                <p class="text__small">Com o código do Mergulhei já instalado, você só precisa se preocupar em produzir conteúdos focados no perfil dos seus leitores e adicionar os links relacionados aos produtos ou lojas parceiras do Mergulhei.</p>
+            </div>
 
-	</section>
-	<!-- Fim comentários-->
-	
-	<!--Partners-->
-	<section id="partners" class="container partners">
-		
-		<h2 class="title text__center margin__bottom">Mais de 200 lojas parceiras</h2>
-		<h3 class="text__center text__sub-title padding-bottom__24">Todas as lojas que você ama estão aqui</h3>
+            <div class="how-works--col">
+                <div class="circle--icon margin__center margin__bottom--big"></div>
+                <h4 class="text__sub-title padding-bottom__24">3. Agora é só acompanhar as vendas</h4>
+                <p class="text__small">A mágica acontece quando seus leitores clicam em um link que o levará a alguma loja parceira do Mergulhei. Toda vez que esse clique se transforma em compra, o Mergulhei paga uma comissão a você pela venda. Simples assim! :)</p>
+            </div>
+        </div>
 
-		<ul>
-			<li><i class="sprite-store sprite-store--submarino"></i></li>
-			<li><i class="sprite-store sprite-store--zattini"></i></li>
-			<li><i class="sprite-store sprite-store--azul"></i></li>
-			<li><i class="sprite-store sprite-store--walmart"></i></li>
-			<li><i class="sprite-store sprite-store--americanas"></i></li>
-			<li><i class="sprite-store sprite-store--mluiza"></i></li>
-			<li><i class="sprite-store sprite-store--sephora"></i></li>
-			<li><i class="sprite-store sprite-store--aliexpress"></i></li>
-			<li><i class="sprite-store sprite-store--belezaweb"></i></li>
-			<li><i class="sprite-store sprite-store--extra"></i></li>
-			<li><i class="sprite-store sprite-store--pontofrio"></i></li>
-			<li><i class="sprite-store sprite-store--natue"></i></li>
-			<li><i class="sprite-store sprite-store--natura"></i></li>
-			<li><i class="sprite-store sprite-store--bahia"></i></li>
-		</ul>
-		<div class="clear__left"></div>
-	</section>
-	<!-- End Partners-->
-	
-	<!--Contact form-->
-
-	<section id="contact" class="form">
-		<div class="container">
-			<h3 class="title text__center padding-bottom__24">A gente adora conversar!</h3>
-			<h2 class="text__sub-title text__center padding-bottom__24">Entre em contato com a gente</h2>
-
-			<form>	
-				<div class="form--input__prepend float__left margin__right">
-					<i class="form--input-text-icon"></i>
-					<input class="form--input-text" name="nome" type="text" placeholder="Nome" />
-				</div>
-				<div class="form--input__prepend float__left margin__left">
-					<i class="form--input-text-icon"></i>
-					<input class="form--input-text" name="mail" type="text" placeholder="E-mail"/>
-				</div>
-				<div class="form--input__prepend">
-					<i class="form--textarea-icon"></i>
-					<textarea class="form--textarea" name="msg" placeholder="Mensagem"></textarea>
-				</div>
-				<a href="" class="btn btn__purple btn__large form--btn text__center">Enviar mensagem</a>
-			</div>
-
-		</form>
-
-	</section>
-	<!--end contact form-->
+    </section>
+    <!--Fim Como Funciona-->
 
 
-	<div class="footer__wave"></div>
+    <!-- Comentários-->
+    <section id="comments" class="container comments">
 
-	<footer class="footer">
-		<div class="footer--links container">
-			<img class="float__left" src="images/logo_white.png">
+        <h3 class="title text__center margin__bottom">Deixe que digam, que pensem, que falem :)</h3>
 
-			<ul>
-				<li><a class="float__left" href="#know-it">Entenda o Mergulhei</a></li>
-				<li><a class="float__left" href="#how-works">Como funciona</a></li>
-				<li><a class="float__left" href="#contact">Entre em contato</a></li>
-				<li><a class="float__left" href="">Cadastre-se</a></li>
-				<li><a href="">Faça seu login</a></li>
-			</ul>
+        <h2 class="text__center text__sub-title padding-bottom__24">O que andam falando da gente</h2>
 
-		</div>
+        <div class="comments--col float__left">
+            <p class="comments--text padding-bottom__24">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
+            <img src="images/foto1.jpg" class="margin__center padding-bottom__24">
+            <p class="comments--text__gray">Fulano de Tal</p>
+            <p class="comments--text__gray comments--text__small">Função</p>
+        </div>
 
-		<div class="rights container text__small clear__left">
-			<span>@2016 - Mergulhei. Todos os direitos reservados.</span>
-		</div>
-	</footer>
+        <div class="comments--col float__left">
+            <p class="comments--text padding-bottom__24">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
+            <img src="images/foto2.jpg" class="margin__center padding-bottom__24">
+            <p class="comments--text__gray">Fulano de Tal</p>
+            <p class="comments--text__gray comments--text__small">Função</p>
+        </div>
+
+        <div class="comments--col">
+            <p class="comments--text padding-bottom__24">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
+            <img src="images/foto3.jpg" class="margin__center padding-bottom__24">
+            <p class="comments--text__gray">Fulano de Tal</p>
+            <p class="comments--text__gray comments--text__small">Função</p>
+        </div>
+
+    </section>
+    <!-- Fim comentários-->
+
+    <!--Partners-->
+    <section id="partners" class="container partners">
+
+        <h2 class="title text__center margin__bottom">Mais de 200 lojas parceiras</h2>
+        <h3 class="text__center text__sub-title padding-bottom__24">Todas as lojas que você ama estão aqui</h3>
+
+        <ul>
+            <li><i class="sprite-store sprite-store--submarino"></i></li>
+            <li><i class="sprite-store sprite-store--zattini"></i></li>
+            <li><i class="sprite-store sprite-store--azul"></i></li>
+            <li><i class="sprite-store sprite-store--walmart"></i></li>
+            <li><i class="sprite-store sprite-store--americanas"></i></li>
+            <li><i class="sprite-store sprite-store--mluiza"></i></li>
+            <li><i class="sprite-store sprite-store--sephora"></i></li>
+            <li><i class="sprite-store sprite-store--aliexpress"></i></li>
+            <li><i class="sprite-store sprite-store--belezaweb"></i></li>
+            <li><i class="sprite-store sprite-store--extra"></i></li>
+            <li><i class="sprite-store sprite-store--pontofrio"></i></li>
+            <li><i class="sprite-store sprite-store--natue"></i></li>
+            <li><i class="sprite-store sprite-store--natura"></i></li>
+            <li><i class="sprite-store sprite-store--bahia"></i></li>
+        </ul>
+        <div class="clear__left"></div>
+    </section>
+    <!-- End Partners-->
+
+    <!--Contact form-->
+
+    <section id="contact" class="form">
+        <div class="container">
+            <h3 class="title text__center padding-bottom__24">A gente adora conversar!</h3>
+            <h2 class="text__sub-title text__center padding-bottom__24">Entre em contato com a gente</h2>
+
+            <form>
+                <div class="form--input__prepend float__left margin__right">
+                    <i class="form--input-text-icon"></i>
+                    <input class="form--input-text" name="nome" type="text" placeholder="Nome" />
+                </div>
+                <div class="form--input__prepend float__left margin__left">
+                    <i class="form--input-text-icon"></i>
+                    <input class="form--input-text" name="mail" type="text" placeholder="E-mail"/>
+                </div>
+                <div class="form--input__prepend">
+                    <i class="form--textarea-icon"></i>
+                    <textarea class="form--textarea" name="msg" placeholder="Mensagem"></textarea>
+                </div>
+                <a href="" class="btn btn__purple btn__large form--btn text__center">Enviar mensagem</a>
+            </div>
+
+        </form>
+
+    </section>
+    <!--end contact form-->
+
+
+    <div class="footer__wave"></div>
+
+    <footer class="footer">
+        <div class="footer--links container">
+            <img class="float__left" src="images/logo_white.png">
+
+            <ul>
+                <li><a class="float__left" href="#know-it">Entenda o Mergulhei</a></li>
+                <li><a class="float__left" href="#how-works">Como funciona</a></li>
+                <li><a class="float__left" href="#contact">Entre em contato</a></li>
+                <li><a class="float__left" href="">Cadastre-se</a></li>
+                <li><a href="">Faça seu login</a></li>
+            </ul>
+
+        </div>
+
+        <div class="rights container text__small clear__left">
+            <span>@2016 - Mergulhei. Todos os direitos reservados.</span>
+        </div>
+    </footer>
 
 </body>
 </html>
