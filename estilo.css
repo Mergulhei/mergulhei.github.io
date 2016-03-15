@@ -95,32 +95,6 @@ body {
     float: left;
 }
 
-.margin__left{
-    margin-left: 8px;
-}
-
-.margin__right{
-    margin-right: 8px;
-}
-
-.margin__bottom{
-    margin-bottom: 8px;
-}
-
-.margin__top{
-    margin-top: 8px;
-}
-
-.margin__center{
-    display: block;
-    margin: 0 auto;
-}
-
-.margin__bottom--big{
-    margin-bottom: 24px;
-}
-
-
 .btn {
     border-radius: 50px;
     border: 1px solid #000;
@@ -282,28 +256,57 @@ body {
     top: auto;
 }
 
-.pr60 {
+.pr\+\+\+ {
     padding-right: 60px;
 }
 
-.pl60 {
+.pl\+\+\+ {
     padding-left: 60px;
 }
 
-.pt60 {
+.pt\+\+\+ {
     padding-top: 60px;
 }
 
-.pb60 {
+.pb\+\+{
+    padding-bottom: 24px;
+}
+
+.pb\+\+\+ {
     padding-bottom: 60px;
 }
 
-.mb16 {
+.ml{
+    margin-left: 8px;
+}
+
+.mr{
+    margin-right: 8px;
+}
+
+.mb {
+    margin-bottom: 8px;
+}
+
+.mb\+ {
     margin-bottom: 16px;
 }
 
-.padding-bottom__24{
-    padding-bottom: 24px;
+.mb\+\+ {
+    margin-bottom: 24px;
+}
+
+.mb\+\+\+ {
+    margin-bottom: 60px;
+}
+
+.mt{
+    margin-top: 8px;
+}
+
+.mha{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text--left{
@@ -331,7 +334,7 @@ body {
     font-weight: lighter;
 }
 
-.text__small{
+.text--small{
     color: #335E7D;
     font-size: 14px;
     font-family: "FuturaStd-Book";
