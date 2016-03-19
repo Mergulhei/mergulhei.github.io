@@ -1,0 +1,25 @@
+.input {
+    position: relative;
+
+    & > &__field {
+        font-size: 16px;
+        line-height: 1.5;
+        color: $purple;
+        padding: 16px 16px 16px 55px;
+        border-radius: 4px;
+        border: none;
+        width: 100%;
+    }
+
+    > textarea.input__field {
+        resize: none;
+    }
+
+    & > &__icon {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 16px;
+        left: 16px;
+    }
+}

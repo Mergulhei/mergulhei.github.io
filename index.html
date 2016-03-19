@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="normalize.css">
-
-    <link rel="stylesheet" type="text/css" href="fonte.css">
-
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>Mergulhei</title>
 
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
@@ -39,8 +37,8 @@
                     <img src="images/logo.png" style="display: block;">
                 </div><div class="grid__col grid__col--6">
                     <nav class="text--right">
-                        <a class="btn btn__colored" href="">Cadastro</a>
-                        <a class="btn btn__white margin__left" href="">Login</a>
+                        <a class="btn btn--colored" href="">Cadastro</a>
+                        <a class="btn btn--white margin__left" href="">Login</a>
                     </nav>
                 </div>
             </div>
@@ -56,8 +54,8 @@
                     <h2 class="banner--title pt+++">Ganhe dinheiro com seu conteúdo</h2>
                     <p class="mb++">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
 
-                    <a class="btn btn__large btn__transparent" href="#how-works">Como funciona</a>
-                    <a class="btn btn__large btn__colored" href="">Crie sua conta grátis</a>
+                    <a class="btn btn--large btn--transparent" href="#how-works">Como funciona</a>
+                    <a class="btn btn--large btn--colored" href="">Crie sua conta grátis</a>
                 </div><div class="grid__col grid__col--6">
 
                 <canvas id="canvas" width="650" height="560" style="display: block;"></canvas>
@@ -124,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <p class="text--center"><a class="btn btn__purple btn__xlarge" href="">Crie sua conta. É grátis!</a></p>
+            <p class="text--center"><a class="btn btn--purple btn--xlarge" href="">Crie sua conta. É grátis!</a></p>
         </div>
     </section>
     <!--Fim Entenda-->
@@ -172,21 +170,21 @@
                     <img src="images/foto1.jpg" class="mb+">
                     <p>Fulano de Tal</p>
                     <p class="text--detail text--small">Função</p>
-                
+
                 </div><div class="grid__col grid__col--4 text--center">
-                
+
                     <p class="comments--text mb++">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
                     <img src="images/foto2.jpg" class="mb+">
                     <p>Fulano de Tal</p>
                     <p class="text--detail text--small">Função</p>
-                
+
                 </div><div class="grid__col grid__col--4 text--center">
-                
+
                     <p class="comments--text mb++">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec tortor consequat blandit. Duis nisl risus, malesuada sit amet malesuada in, tincidunt at arcu."</p>
                     <img src="images/foto3.jpg" class="mb+">
                     <p>Fulano de Tal</p>
                     <p class="text--detail text--small">Função</p>
-                
+
                 </div>
             </div>
         </div>
@@ -220,25 +218,32 @@
 
     <!--Contact form-->
 
-    <section id="contact" class="form bg--gray-light">
-        <div class="container">
-            <h3 class="text--title text--center text--purple mb++ pt+++">A gente adora conversar!</h3>
+    <section id="contact" class="bg--blue-light">
+        <div class="container pt+++ pb++">
+            <h3 class="text--title text--center text--purple mb++">A gente adora conversar!</h3>
             <h2 class="text--center text--purple mb++">Entre em contato com a gente</h2>
 
-            <form>
-                <div class="form--input__prepend float__left margin__right">
-                    <i class="form--input-text-icon"></i>
-                    <input class="form--input-text" name="nome" type="text" placeholder="Nome" />
+            <form class="form">
+                <div class="grid">
+                    <div class="grid__col grid__col--6">
+                        <div class="input mb+">
+                            <i class="input__icon">@</i>
+                            <input type="text" class="input__field" name="name" placeholder="Nome">
+                        </div>
+                    </div><div class="grid__col grid__col--6">
+                        <div class="input mb+">
+                            <i class="input__icon">2</i>
+                            <input type="text" class="input__field" name="email" placeholder="E-mail">
+                        </div>
+                    </div>
                 </div>
-                <div class="form--input__prepend float__left margin__left">
-                    <i class="form--input-text-icon"></i>
-                    <input class="form--input-text" name="mail" type="text" placeholder="E-mail"/>
+
+                <div class="input mb+">
+                    <i class="input__icon">@</i>
+                    <textarea class="input__field" name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
-                <div class="form--input__prepend">
-                    <i class="form--textarea-icon"></i>
-                    <textarea class="form--textarea" name="msg" placeholder="Mensagem"></textarea>
-                </div>
-                <a href="" class="btn btn__purple btn__large form--btn text--center">Enviar mensagem</a>
+
+                <a href="" class="btn btn--purple btn--large form--btn text--center">Enviar mensagem</a> -->
             </div>
 
         </form>

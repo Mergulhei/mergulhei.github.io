@@ -9,10 +9,22 @@ $gray-light: #F1F0F5;
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "FuturaStd";
+    font-weight: 400;
+    src: url("fonte/FuturaStd-Book.otf");
+}
+
+@font-face {
+    font-family: "FuturaStd";
+    font-weight: 100;
+    src: url("fonte/FuturaStd-Light.otf");
+}
+
 body {
 	font-size: 16px;
 	font-weight: 400;
-    line-height: 1.41;
+    line-height: 1.5;
     font-family: "FuturaStd";
     color: $gray;
     background-color: white;
@@ -22,8 +34,12 @@ body {
 @import './modules/banner';
 @import './modules/bg';
 @import './modules/btn';
+@import './modules/circle';
 @import './modules/container';
+@import './modules/footer';
+@import './modules/form';
 @import './modules/grid';
+@import './modules/input';
 @import './modules/list';
 @import './modules/spacing';
 @import './modules/sprite';
