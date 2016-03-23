@@ -1,3 +1,19 @@
+.p {
+    padding: 8px;
+}
+
+.p\+ {
+    padding: 16px;
+}
+
+.p\+\+ {
+    padding: 24px;
+}
+
+.p\+\+\+ {
+    padding: 60px;
+}
+
 .pr\+\+\+ {
     padding-right: 60px;
 }
@@ -65,4 +81,9 @@
 .mha{
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.xs\/p0 {
+    padding: 0;
 }

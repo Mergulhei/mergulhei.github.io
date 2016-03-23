@@ -8,22 +8,48 @@
     vertical-align: top;
 }
 
-.grid__col--6 {
-    width: 50%;
-}
-
-.grid__col--4 {
-    width: 33.3333333%;
-}
-
-.grid.grid--middle > .grid__col {
-    vertical-align: middle;
-}
-
 .grid.grid--large {
     margin-left: -64px;
 }
 
 .grid.grid--large > .grid__col {
     padding-left: 64px;
+}
+
+
+@mixin grid($widths-breakpoint: null) {
+    .#{$widths-breakpoint}grid__col {
+        &--4 {
+            width: 33.3333333%;
+        }
+
+        &--6 {
+            width: 50%;
+        }
+
+        &--12 {
+            width: 100%;
+        }
+    }
+
+    .grid.#{$widths-breakpoint}grid--middle > .grid__col {
+        vertical-align: middle;
+    }
+
+    .grid.#{$widths-breakpoint}grid--bottom > .grid__col {
+        vertical-align: bottom;
+    }
+}
+
+
+@include grid();
+
+@each $breakpoint in $breakpoints {
+
+  // Get the name of the breakpoint.
+  $alias: nth($breakpoint, 1);
+
+  @include media-query($alias) {
+      @include grid(#{$alias}\/);
+  }
 }

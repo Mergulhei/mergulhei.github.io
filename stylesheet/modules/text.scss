@@ -1,16 +1,4 @@
 .text {
-    &--left {
-        text-align: left;
-    }
-
-    &--right{
-        text-align: right;
-    }
-
-    &--center{
-        text-align: center;
-    }
-
     &--title {
         font-size: 34px;
         font-weight: 100;
@@ -32,24 +20,50 @@
     &--blue-dark {
         color: $blue-dark;
     }
+}
 
-    // &__description{
-    //     color: #7a7a7a;
-    //     line-height: 30px;
-    //     font-size: 16px;
-    // }
+@include media-query('sm') {
+    .text {
+        &--title {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}
 
-    // &__sub-title{
-    //     color: #335E7D;
-    //     font-size: 16px;
-    //     font-weight: lighter;
-    // }
+@include media-query('xs') {
+    .text {
+        &--title {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}
 
-    // &--small{
-    //     color: #335E7D;
-    //     font-size: 14px;
-    //     font-family: "FuturaStd-Book";
-    //     font-weight: lighter;
-    //     line-height: 24px;
-    // }
+@mixin text($widths-breakpoint: null) {
+    .#{$widths-breakpoint}text {
+        &--left {
+            text-align: left;
+        }
+
+        &--right{
+            text-align: right;
+        }
+
+        &--center{
+            text-align: center;
+        }
+    }
+}
+
+@include text();
+
+@each $breakpoint in $breakpoints {
+
+  // Get the name of the breakpoint.
+  $alias: nth($breakpoint, 1);
+
+  @include media-query($alias) {
+      @include text(#{$alias}\/);
+  }
 }

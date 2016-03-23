@@ -2,26 +2,50 @@
     background-color: #887ADA;
     color: white;
     padding: 0;
+    overflow: hidden;
+
+    &--text{
+        width: 436px;
+        padding-top: 68px;
+    }
+
+    &--title {
+        font-size: 45px;
+        font-weight: lighter;
+        line-height: 54px;
+        margin-bottom: 32px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow: 0px 0px 0px transparentize(white, 0.4);
+    }
+
+    &--p {
+        font-size: 18px;
+        margin-bottom: 48px;
+        font-weight: lighter;
+        line-height: 30px;
+    }
 }
 
-.banner--text{
-    width: 436px;
-    padding-top: 68px;
+
+@include media-query('sm') {
+    .banner {
+        &--title {
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+    }
 }
 
-.banner--title {
-    font-size: 45px;
-    font-weight: lighter;
-    line-height: 54px;
-    margin-bottom: 32px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-shadow: 0px 0px 0px transparentize(white, 0.4);
-}
-
-.banner--p{
-    font-size: 18px;
-    margin-bottom: 48px;
-    font-weight: lighter;
-    line-height: 30px;
+@include media-query('xs') {
+    .banner {
+        &--title {
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+    }
 }

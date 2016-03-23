@@ -5,64 +5,66 @@
     font-size: 14px;
     text-decoration: none;
     display: inline-block;
-    font-family: "FuturaStd-Light";
+    font-weight: 100;
+    text-align: center;
+
+    &--colored {
+        background-color: $blue;
+        border-color: $blue;
+        color: white;
+
+        &:hover {
+            background-color: $blue-dark;
+            border-color: $blue-dark;
+            color: white;
+        }
+    }
+
+    &--white {
+        background-color: white;
+        border-color: $blue;
+        color: $blue;
+
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+            color: white;
+        }
+    }
+
+    &--transparent{
+        background-color: transparent;
+        border-color: white;
+        color: white;
+
+        &:hover{
+            background-color: white;
+            border-color: white;
+            color: $purple;
+        }
+    }
+
+    &--purple{
+        background-color: $purple;
+        border-color: white;
+        color: white;
+
+        &:hover{
+            background-color: transparent;
+            border-color: $purple;
+            color: $purple;
+        }
+    }
+
+    &--large {
+        padding: 12px 32px;
+        font-size: 16px
+    }
+
+    &--xlarge {
+        padding: 16px 48px;
+        font-size: 24px
+    }
 }
 
-.btn--colored {
-    background-color: #5CCFE6;
-    border-color: #5CCFE6;
-    color: white;
-}
 
-.btn--colored:hover {
-    background-color: #14A7C5;
-    border-color: #14A7C5;
-    color: white;
-}
-
-
-.btn--white {
-    background-color: white;
-    border-color: #5CCFE6;
-    color: #5CCFE6;
-}
-
-.btn--white:hover {
-    background-color: #5CCFE6;
-    border-color: #5CCFE6;
-    color: white;
-}
-
-.btn--large {
-    padding: 12px 32px;
-    font-size: 16px
-}
-
-.btn--xlarge {
-    padding: 16px 48px;
-    font-size: 24px
-}
-
-.btn--transparent{
-    background-color: transparent;
-    border-color: white;
-    color: white;
-}
-
-.btn--transparent:hover{
-    background-color: white;
-    border-color: white;
-    color: #887ADA;
-}
-
-.btn--purple{
-    background-color: #887ADA;
-    border-color: white;
-    color: white;
-}
-
-.btn--purple:hover{
-    background-color: white;
-    border-color: #887ADA;
-    color: #887ADA;
-}
