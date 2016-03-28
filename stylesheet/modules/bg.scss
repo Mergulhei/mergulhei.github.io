@@ -23,3 +23,17 @@
         background-color: $purple-light;
     }
 }
+
+@each $breakpoint in $breakpoints {
+
+  // Get the name of the breakpoint.
+  $alias: nth($breakpoint, 1);
+
+  @include media-query($alias) {
+    .#{$alias}\/bg {
+        &--purple-lighter {
+            background-color: $purple-lighter;
+        }
+    }
+  }
+}
