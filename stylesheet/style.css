@@ -47,6 +47,8 @@ body {
   background-color: #474747; }
 .bg--gray-lighter {
   background-color: #999999; }
+.bg--blue-light {
+  background-color: #8FD7F5; }
 .bg--blue-lighter {
   background-color: #EBF7FC; }
 .bg--purple-lighter {
@@ -340,6 +342,40 @@ body {
     background-color: #F1F0F5; }
     .lg\/quote--purple-lighter:after {
       border-color: #F1F0F5 transparent; } }
+.explore {
+  position: relative; }
+  .explore__bg {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: 550px; }
+    @media (max-width: 768px) {
+      .explore__bg {
+        height: 350px; } }
+  .explore__content {
+    position: relative;
+    z-index: 1; }
+
+.slider {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 20px 38px -10px #D8D8D8; }
+  .slider__browser {
+    display: block;
+    width: 100%; }
+  .slider__dots {
+    text-align: center;
+    margin-bottom: 24px; }
+    .slider__dots .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      opacity: 1;
+      margin: 0 5px; }
+    .slider__dots .swiper-pagination-bullet-active {
+      background-color: #3CB7EB; }
+
 .p {
   padding: 8px; }
 
@@ -420,7 +456,7 @@ body {
   padding: 0; }
 
 .sprite-store {
-  background: url("images/sprite.png") no-repeat 0 0;
+  background: url("/images/sprite.png") no-repeat 0 0;
   width: 128px;
   height: 77px;
   display: inline-block;
@@ -498,6 +534,8 @@ body {
   color: #c2c2c2; }
 .text--purple {
   color: #695AC0; }
+.text--blue-lighter {
+  color: #EBF7FC; }
 .text--blue-dark {
   color: #335E7D; }
 
