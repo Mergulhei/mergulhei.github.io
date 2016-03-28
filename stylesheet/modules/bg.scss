@@ -1,27 +1,21 @@
 .bg {
-	&--purple-lighter {
-		background-color: $purple-lighter;
-	}
-
-	&--purple-light {
-		background-color: $purple-light;
-	}
-
-	&--blue-lighter {
-		background-color: $blue-lighter;
-	}
-}
-
-@each $breakpoint in $breakpoints {
-
-  // Get the name of the breakpoint.
-  $alias: nth($breakpoint, 1);
-
-  @include media-query($alias) {
-    .#{$alias}\/bg {
-        &--purple-lighter {
-            background-color: $purple-lighter;
-        }
+    &--gray {
+        background-color: $gray;
     }
-  }
+
+    &--gray-lighter {
+        background-color: $gray-lighter;
+    }
+
+    &--blue-lighter {
+        background-color: $blue-lighter;
+    }
+
+    &--purple-lighter {
+        background-color: $purple-lighter;
+    }
+
+    &--purple-light {
+        background-color: $purple-light;
+    }
 }

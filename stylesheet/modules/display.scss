@@ -1,3 +1,7 @@
+.float--right {
+    float: right;
+}
+
 @mixin display-helper($widths-breakpoint: null) {
     .#{$widths-breakpoint}d {
         &-b {

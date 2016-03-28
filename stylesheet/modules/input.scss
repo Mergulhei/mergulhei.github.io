@@ -22,4 +22,20 @@
         top: 16px;
         left: 16px;
     }
+
+    ::-webkit-input-placeholder {
+        color: inherit;
+    }
+
+    :-ms-input-placeholder {
+        color: inherit;
+    }
+
+    ::-moz-placeholder {
+        color: inherit;
+    }
+
+    :-moz-placeholder {
+        color: inherit;
+    }
 }

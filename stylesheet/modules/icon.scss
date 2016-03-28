@@ -1,8 +1,50 @@
 .icon {
-    width: 36px;
-    height: 36px;
+    &--medium {
+        width: 36px;
+        height: 36px;
+    }
+
+    &--small {
+        width: 24px;
+        height: 24px;
+    }
+
+    &--xsmall {
+        width: 16px;
+        height: 16px;
+    }
+
+    &--spaced {
+        margin: 22px;
+    }
 
     &--purple {
-        fill: $purple;
+        fill: $purple-light;
     }
+
+    &--blue {
+        fill: $blue;
+    }
+
+    &--blue-lighter {
+        fill: darken($blue-lighter, 7%);
+    }
+
+    &--gray-lighter {
+        fill: $gray-lighter;
+    }
+}
+
+@each $breakpoint in $breakpoints {
+
+  // Get the name of the breakpoint.
+  $alias: nth($breakpoint, 1);
+
+  @include media-query($alias) {
+    .#{$alias}\/icon {
+        &--purple {
+            fill: $purple;
+        }
+    }
+  }
 }

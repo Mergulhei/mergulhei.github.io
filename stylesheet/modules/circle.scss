@@ -1,8 +1,15 @@
+.circle {
+    &--icon{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        border:1px solid #D1ECF8;
+        background-color: white;
+        position: relative;
 
-.circle--icon{
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    border:1px solid #D1ECF8;
-    background-color: white;
+        &:hover {
+            transition: transform .3s ease-out;
+            transform: scale(1.15);
+        }
+    }
 }

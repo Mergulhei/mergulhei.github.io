@@ -1,41 +1,39 @@
 .footer {
-    vertical-align: middle;
-    padding-top: 32px;
-    background-color: #9CD7E9;
-}
-
-.footer__wave {
-    background-image: url("images/wave.jpg");
-    width: 100%;
-    height: 57px;
-    display: block;
-}
-
-.footer img {
-    vertical-align: middle;
-}
-
-.footer ul{
-    float: right;
-}
-
-.footer ul li{
-    display: inline;
-    text-align: right;
-
-}
-
-.footer ul li a{
-    margin: 0 5px;
-    text-align: right;
-    color: #335E7D;
     font-size: 14px;
-    font-family: "FuturaStd-Book";
-    font-weight: lighter;
-    line-height: 24px;
-    text-decoration: none;
-}
 
-.footer--links {
-    padding-bottom: 72px;
+    &__list {
+        display: inline-block;
+        vertical-align: sub;
+    }
+
+    &__list-item {
+        display: inline;
+    }
+
+    &__link {
+        font-size: inherit;
+        font-weight: 200;
+        margin: 0 10px;
+
+        &,
+        &:link,
+        &:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:active,
+        &:focus {
+            color: #fff;
+        }
+
+        &:hover {
+            color: $purple-light;
+        }
+    }
+
+    &__rights {
+        font-size: inherit;
+        margin: 40px auto;
+    }
 }
