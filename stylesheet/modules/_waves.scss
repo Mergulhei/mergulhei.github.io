@@ -1,0 +1,12 @@
+.waves {
+    background-repeat: repeat-x;
+    height: 16px;
+
+    &--gray {
+        background-image: url('./../images/wave.png');
+    }
+
+    &--white {
+        background-image: url('./../images/wave-white.png');
+    }
+}

@@ -5,37 +5,12 @@
     }
 
     &--subtitle {
-        font-weight: 400;
+        font-size: 24px;
+        font-weight: 300;
     }
 
-    &--with-lines {
-        overflow: hidden;
-        text-align: center;
-
-        &:before,
-        &:after {
-            background-color: lighten($purple-light, 25%);
-            content: "";
-            display: inline-block;
-            height: 1px;
-            position: relative;
-            vertical-align: middle;
-            width: 50%;
-        }
-
-        &:before {
-            right: 25px;
-            margin-left: -50%;
-        }
-
-        &:after {
-            left: 25px;
-            margin-right: -50%;
-        }
-    }
-
-    &--detail {
-        font-size: 14px;
+    &--caption {
+        font-size: 16px;
     }
 
     &--gray {

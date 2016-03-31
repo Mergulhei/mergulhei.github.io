@@ -1,0 +1,25 @@
+.card {
+    width: 100%;
+    max-width: 358px;
+    min-height: 415px;
+    margin: auto;
+    background-color: $white;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    &__image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 197px;
+    }
+
+    &__footer {
+        font-size: 14px;
+        color: $gray-lighter;
+        margin-top: auto;
+    }
+}

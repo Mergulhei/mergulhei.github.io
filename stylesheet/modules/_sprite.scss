@@ -1,0 +1,74 @@
+.sprite {
+    &__wrapper {
+        width: 164px;
+        height: 125px;
+        background-color: $white;
+        margin: 5px;
+    }
+
+    &__image {
+        background: url('/images/sprite.png') no-repeat 0 0;
+        width: 128px;
+        height: 77px;
+
+        display: inline-block;
+        margin-top: 24px;
+
+        &--submarino {
+            background-position: 0 0;
+        }
+
+        &--zattini {
+            background-position: -160px 0;
+        }
+
+        &--azul {
+            background-position: -320px 0;
+        }
+
+        &--walmart {
+            background-position: -480px 0;
+        }
+
+        &--americanas {
+            background-position: -640px 0;
+        }
+
+        &--mluiza {
+            background-position: -800px 0;
+        }
+
+        &--sephora {
+            background-position: -964px 0;
+        }
+
+        &--aliexpress {
+            background-position: 0 -104px;
+        }
+
+        &--belezaweb {
+            background-position: -160px -104px;
+        }
+
+        &--extra {
+            background-position: -320px -104px;
+        }
+
+        &--pontofrio {
+            background-position: -480px -104px;
+        }
+
+        &--natue {
+            background-position: -640px -104px;
+        }
+
+        &--natura {
+            background-position: -800px -104px;
+        }
+
+        &--bahia {
+            background-position: -964px -104px;
+        }
+    }
+
+}

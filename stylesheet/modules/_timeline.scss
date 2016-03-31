@@ -2,6 +2,12 @@
     position: relative;
     padding: 52px 0;
 
+    &__header {
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+
     &__ball, &__line {
         margin: auto;
         position: absolute;
@@ -21,10 +27,5 @@
     &__line {
         width: 1px;
         background-color: #D0CCE9;
-    }
-
-
-    &--end > &__ball {
-        top: auto;
     }
 }

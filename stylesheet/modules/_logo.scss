@@ -1,0 +1,13 @@
+.logo {
+    width: 135px;
+    height: 29px;
+    vertical-align: middle;
+
+    &--purple-light {
+        fill: $purple-light;
+    }
+
+    &--white {
+        fill: $white;
+    }
+}
