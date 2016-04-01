@@ -17,6 +17,10 @@
         color: $gray;
     }
 
+    &--white {
+        color: $white;
+    }
+
     &--gray-lighter {
         color: lighten($gray-lighter, 16%);
     }
@@ -40,6 +44,10 @@
             font-size: 20px;
             font-weight: 400;
         }
+
+        &--subtitle {
+            font-size: 16px;
+        }
     }
 }
 
@@ -48,6 +56,10 @@
         &--title {
             font-size: 20px;
             font-weight: 400;
+        }
+
+        &--subtitle {
+            font-size: 16px;
         }
     }
 }
@@ -68,6 +80,10 @@
 
         &--small {
             font-size: 14px;
+        }
+
+        &--xsmall {
+            font-size: 12px;
         }
     }
 }

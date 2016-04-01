@@ -1,73 +1,106 @@
 .sprite {
     &__wrapper {
-        width: 164px;
-        height: 125px;
-        background-color: $white;
-        margin: 5px;
+        &--partners {
+            width: 164px;
+            height: 125px;
+            background-color: $white;
+            margin: 3px 1px;
+        }
+
+        &--clients {
+            width: 184px;
+            height: 57px;
+            margin: 0 20px 25px;
+        }
     }
 
-    &__image {
+    &__clients,
+    &__partners {
         background: url('/images/sprite.png') no-repeat 0 0;
+        display: inline-block;
+    }
+
+    &__clients {
+        width: 184px;
+        height: 57px;
+
+        &--meliuz {
+            background-position: 0 0;
+        }
+        &--worldsense {
+            background-position: 0 -57px;
+        }
+        &--pelando {
+            background-position: 0 -114px;
+        }
+        &--cuponomize {
+            background-position: 0 -171px;
+        }
+        &--vida-desconto {
+            background-position: 0 -228px;
+        }
+        &--uai-desconto {
+            background-position: 0 -285px;
+        }
+        &--melhor {
+            background-position: 0 -342px;
+        }
+        &--1001 {
+            background-position: 0 -399px;
+        }
+    }
+
+    &__partners {
         width: 128px;
         height: 77px;
-
-        display: inline-block;
         margin-top: 24px;
 
         &--submarino {
-            background-position: 0 0;
+            background-position: -28px -1074px;
         }
 
         &--zattini {
-            background-position: -160px 0;
+            background-position: -28px -920px;
         }
 
         &--azul {
-            background-position: -320px 0;
+            background-position: -28px -843px;
         }
 
         &--walmart {
-            background-position: -480px 0;
+            background-position: -28px -612px;
         }
 
         &--americanas {
-            background-position: -640px 0;
+            background-position: -28px -689px;
         }
 
         &--mluiza {
-            background-position: -800px 0;
+            background-position: -28px -1151px;
         }
 
         &--sephora {
-            background-position: -964px 0;
+            background-position: -28px -1305px;
         }
 
         &--aliexpress {
-            background-position: 0 -104px;
+            background-position: -28px -1228px;
         }
 
         &--belezaweb {
-            background-position: -160px -104px;
+            background-position: -28px -997px;
         }
 
         &--extra {
-            background-position: -320px -104px;
+            background-position: -28px -766px;
         }
 
         &--pontofrio {
-            background-position: -480px -104px;
-        }
-
-        &--natue {
-            background-position: -640px -104px;
+            background-position: -28px -535px;
         }
 
         &--natura {
-            background-position: -800px -104px;
-        }
-
-        &--bahia {
-            background-position: -964px -104px;
+            background-position: -28px -458px;
         }
     }
 

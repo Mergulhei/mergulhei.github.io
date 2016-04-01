@@ -10,3 +10,9 @@ body {
     color: $gray-light;
     background-color: white;
 }
+
+.image {
+    &--responsive {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.link {
+    font-size: inherit;
+    font-weight: 200;
+
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        color: inherit;
+    }
+
+    &.hover--purple-light:hover {
+        color: $purple-light;
+    }
+
+    &.hover--blue:hover {
+        color: $blue;
+    }
+}

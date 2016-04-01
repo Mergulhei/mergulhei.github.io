@@ -29,3 +29,16 @@
         background-color: #D0CCE9;
     }
 }
+
+
+@include media-query('sm') {
+    .timeline {
+        padding: 0;
+    }
+}
+
+@include media-query('xs') {
+    .timeline {
+        padding: 0;
+    }
+}

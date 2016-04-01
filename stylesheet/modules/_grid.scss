@@ -20,11 +20,15 @@
 @mixin grid($widths-breakpoint: null) {
     .#{$widths-breakpoint}grid__col {
         &--4 {
-            width: 33.3333333%;
+            width: (100% / 12) * 4;
         }
 
         &--6 {
-            width: 50%;
+            width: (100% / 12) * 6;
+        }
+
+        &--8 {
+            width: (100% / 12) * 8;
         }
 
         &--12 {
