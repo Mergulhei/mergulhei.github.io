@@ -2,6 +2,8 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" type="text/css" href="stylesheet/normalize.css">
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
@@ -9,314 +11,333 @@
         <title>Mergulhei</title>
     </head>
     <body class="page" onload="init();">
-        <header>
-            <div class="container pt pb">
-                <div class="grid grid--middle">
-                    <div class="grid__col grid__col--4">
-                        <svg class="logo logo--purple-light">
-                          <use xlink:href="images/sprite.svg#logo-mergulhei"></use>
-                        </svg>
-                    </div><div class="grid__col grid__col--8">
-                        <nav class="text--right">
-                            <a class="link text--gray-lighter hover--blue text--xsmall pr sm/d-n xs/d-n" href="#know-it">O Mergulhei</a>
-                            <a class="link text--gray-lighter hover--blue text--xsmall pr sm/d-n xs/d-n" href="#how-works">Como funciona</a>
-                            <a class="link text--gray-lighter hover--blue text--xsmall pr sm/d-n xs/d-n" href="#contact">Contato</a>
-                            <a class="btn btn--colored sm/d-n xs/d-n" href="">Cadastro</a>
-                            <a class="btn btn--white margin__left sm/d-n xs/d-n" href="">Login</a>
-                            <a class="d-ib va--middle md/d-n lg/d-n" href="#">
-                                <svg class="d-b icon--medium icon--blue">
-                                    <use xlink:href="images/sprite.svg#menu"></use>
-                                </svg>
-                            </a>
-                        </nav>
-                    </div>
-                </div>
+        <div class="menu__drawers">
+            <div class="menu__drawer menu__drawer--right bg--gray-lightest">
+                <nav class="ph++ text--center">
+                    <a class="link d-b pb text--big text--gray-lighter" data-anchor-link href="#know-it">O Mergulhei</a>
+                    <a class="link d-b pb text--big text--gray-lighter" data-anchor-link href="#how-works">Como funciona</a>
+                    <a class="link d-b pb text--big text--gray-lighter" data-anchor-link href="#contact">Contato</a>
+                    <div class="menu__divider mt mb+"></div>
+                    <a class="link d-b pb text--big text--gray-lighter" href="#">Cadastro</a>
+                    <a class="link d-b pb text--big text--gray-lighter" href="#">Login</a>
+                </nav>
             </div>
-
-        </header>
-
-        <!-- Banner -->
-        <section class="banner">
-            <div class="container">
-                <div class="grid">
-                    <div class="grid__col grid__col--6 xs/grid__col--12">
-                        <div class="pb++ xs/text--center">
-                            <h2 class="banner--title pt+++">Ganhe dinheiro com seu conteúdo</h2>
-                            <p class="mb++">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
-
-                            <a class="btn btn--medium btn--transparent mb xs/grid__col--12" href="#how-works">Como funciona</a>
-                            <a class="btn btn--medium btn--colored mb xs/grid__col--12" href="">Crie sua conta grátis</a>
-                        </div>
-                    </div><div class="grid__col grid__col--6 xs/grid__col--12">
-                        <canvas id="canvas" width="650" height="560" style="display: block; max-width: 100%;"></canvas>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Fim Banner -->
-
-        <!-- Clientes -->
-        <section class="bg--gray-lightest">
-            <div class="container p+">
-                <h3 class="text--title mt++ mb+ text--center text--purple">Quem usa o Mergulhei recomenda</h3>
-                <div class="grid">
-                    <div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
-                        <div class="card sm/mb xs/mb">
-                            <div class="card__image" style="background-image: url('/images/card-guilherme.png')"></div>
-                            <p class="p+">
-                                “Depois que começamos a trabalhar com o Mergulhei conseguimos monetizar 80% dos nossos links com escalabilidade e velocidade.”
-                            </p>
-                            <p class="card__footer pb+">
-                                Managing Director e Fundador do Pelando
-                            </p>
-                        </div>
-                    </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
-                        <div class="card sm/mb xs/mb">
-                            <div class="card__image" style="background-image: url('/images/card-guilherme.png')"></div>
-                            <p class="p+">
-                                “Graças ao Mergulhei conseguimos ganhar dinheiro em todas as principais lojas do Brasil.”
-                            </p>
-                            <p class="card__footer pb+">
-                                Managing Director e Fundador do Pelando
-                            </p>
-                        </div>
-                    </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
-                        <div class="card sm/mb xs/mb">
-                            <div class="card__image" style="background-image: url('/images/card-guilherme.png')"></div>
-                            <p class="p+">
-                                “Depois que começamos a trabalhar com o Mergulhei conseguimos monetizar 80% dos nossos links com escalabilidade e velocidade.”
-                            </p>
-                            <p class="card__footer pb+">
-                                Managing Director e Fundador do Pelando
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text--center p++">
-                    <ul class="sprite list--inline text--center md/p++ lg/p++">
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--meliuz"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--worldsense"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--pelando"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--cuponomize"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--vida-desconto"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--uai-desconto"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--melhor"></i></li>
-                        <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--1001"></i></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- Fim Clientes -->
-
-        <!--Entenda o Mergulhei-->
-        <section id="know-it">
-            <div class="container pt++ pb+++">
-                <div class="timeline__header text--center">
-                    <svg class="icon--medium icon--purple">
-                        <use xlink:href="images/sprite.svg#anchor"></use>
-                    </svg>
-                    <h2 class="text--purple text--title mv">O que é o Mergulhei?</h2>
-                    <h3 class="text--subtitle mb++">O Mergulhei é uma ferramenta que ajuda produtores de conteúdo e publishers em geral a rentabilizar seu site.</h3>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline__line xs/d-n"></div>
-                    <div class="timeline__ball xs/d-n"></div>
-
-                    <div class="grid grid--middle grid--large">
-                        <div class="grid__col grid__col--6 xs/grid__col--12">
-                            <div class="pr+++ xs/p0 xs/text--center">
-                                <svg class="icon--medium icon--purple">
-                                  <use xlink:href="images/sprite.svg#store"></use>
-                                </svg>
-                                <h3 class="text--subtitle mb++">Ganhe dinheiro divulgando produtos dos nossos parceiros no conteúdo do seu blog ou site sem alterar nada no layout.</h3>
-                            </div>
-                        </div><div class="grid__col grid__col--6 xs/d-n">
-                            <div class="text--center"><img src="images/img1.png"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline__line xs/d-n"></div>
-                    <div class="timeline__ball xs/d-n"></div>
-
-                    <div class="grid grid--middle grid--large">
-                        <div class="grid__col grid__col--6 xs/d-n">
-                            <div class="text--center"><img src="images/img2.png"></div>
-                        </div><div class="grid__col grid__col--6 xs/grid__col--12">
-                            <div class="pl+++ xs/p0 text--right xs/text--center">
-                                <svg class="icon--medium icon--purple">
-                                    <use xlink:href="images/sprite.svg#wallet"></use>
-                                </svg>
-                                <h3 class="text--subtitle mb++">Todas as vezes que seus leitores clicarem no link do produto e realizarem a compra, você ganha uma comissão pela venda.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline__line xs/d-n"></div>
-                    <div class="timeline__ball xs/d-n"></div>
-
-                    <div class="grid grid--middle grid--large">
-                        <div class="grid__col grid__col--6 xs/grid__col--12">
-                            <div class="pr+++ xs/p0 xs/text--center">
-                                <svg class="icon--medium icon--purple">
-                                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                                </svg>
-                                <h3 class="text--subtitle mb++">O Mergulhei é compatível com Wordpress, Blogger e todas as outras plataformas. Basta copiar uma linha de código, colar no seu site e pronto!</h3>
-                            </div>
-                        </div><div class="grid__col grid__col--6 xs/d-n">
-                            <div class="text--center"><img src="images/img3.png"></div>
-                        </div>
-                    </div>
-                </div>
-                <p class="text--center"><a class="btn btn--colored btn--large" href="">Crie sua conta. É grátis!</a></p>
-                <p class="text--center mt++ mh++">
-                    <svg class="icon--medium icon--purple">
-                        <use xlink:href="images/sprite.svg#anchor"></use>
-                    </svg>
-                </p>
-            </div>
-        </section>
-        <!--Fim Entenda-->
-
-        <!--Como funciona-->
-        <section id="how-works" class="pt+++">
-            <div class="waves waves--gray"></div>
-            <div class="bg--gray-lightest pb+++">
-                <div class="container">
-                    <h3 class="text--title text--purple text--center pt+++ pb">Ative o Mergulhei e deixa o resto com a gente!</h3>
-                    <h2 class="text--center text--caption text--purple mb+">Entenda como funciona</h2>
-
-                    <div class="grid">
-                        <div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
-                            <div class="circle--icon mha mb+ xs/mb text--center">
-                                <svg class="icon--medium icon--purple icon--spaced">
-                                    <use xlink:href="images/sprite.svg#wrench"></use>
-                                </svg>
-                            </div>
-                            <h4 class="text--purple mb text--center">1. Ative o Mergulhei no seu site</h4>
-                            <p class="sm/text--small xs/text--small text--center mb++ sm/ph+++">Após criar sua conta no Mergulhei, você instala o JavaScript no seu site e pronto! Nós começamos a facilitar sua vida!</p>
-                        </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
-                            <div class="circle--icon mha mb+ xs/mb text--center">
-                                <svg class="icon--medium icon--purple icon--spaced">
-                                    <use xlink:href="images/sprite.svg#link2"></use>
-                                </svg>
-                            </div>
-                            <h4 class="text--purple mb text--center">2. Adicione os links no seu conteúdo</h4>
-                            <p class="sm/text--small xs/text--small text--center mb++ sm/ph+++">Com o código do Mergulhei já instalado, você só precisa se preocupar em produzir conteúdos focados no perfil dos seus leitores e adicionar os links relacionados aos produtos ou lojas parceiras do Mergulhei.</p>
-                        </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
-                            <div class="circle--icon mha mb+ xs/mb text--center">
-                                <svg class="icon--medium icon--purple icon--spaced">
-                                    <use xlink:href="images/sprite.svg#receipt"></use>
-                                </svg>
-                            </div>
-                            <h4 class="text--purple mb text--center">3. Agora é só acompanhar as vendas</h4>
-                            <p class="sm/text--small xs/text--small text--center mb++ sm/ph+++">A mágica acontece quando seus leitores clicam em um link que o levará a alguma loja parceira do Mergulhei. Toda vez que esse clique se transforma em compra, o Mergulhei paga uma comissão a você pela venda. Simples assim! :)</p>
-                        </div>
-                    </div>
-
-                    <div class="text--center"><img src="/images/waves.png" alt="Ondas" /></div>
-                    <h3 class="text--title text--purple text--center pt+++ pb">Mais de 200 lojas parceiras</h3>
-
-                    <ul class="sprite list--inline text--center md/p++ lg/p++">
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--submarino"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--zattini"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--azul"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--walmart"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--americanas"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--mluiza"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--sephora"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--aliexpress"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--belezaweb"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--extra"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--pontofrio"></i></li>
-                        <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--natura"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="waves waves--white bg--gray-lightest"></div>
-        </section>
-        <!--Fim Como Funciona-->
-
-        <!--Contact form-->
-        <section id="contact">
-            <div class="container pt+++ pb++">
-                <h3 class="text--title text--center text--purple mb">A gente adora conversar!</h3>
-                <h2 class="text--caption text--center text--purple mb+">Entre em contato com a gente</h2>
-
-                <form class="form">
-                    <div class="grid">
-                        <div class="grid__col grid__col--6 xs/grid__col--12">
-                            <div>
-                                <div class="input mb+">
-                                    <svg class="input__icon icon--gray-lighter">
-                                        <use xlink:href="images/sprite.svg#user"></use>
-                                    </svg>
-                                    <input type="text" class="input__field" name="name" placeholder="Nome">
-                                </div>
-                            </div>
-                        </div><div class="grid__col grid__col--6 xs/grid__col--12">
-                            <div>
-                                <div class="input mb+">
-                                    <svg class="input__icon icon--gray-lighter">
-                                        <use xlink:href="images/sprite.svg#envelope"></use>
-                                    </svg>
-                                    <input type="text" class="input__field" name="email" placeholder="E-mail">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input mb">
-                        <svg class="input__icon icon--gray-lighter">
-                            <use xlink:href="images/sprite.svg#pencil"></use>
-                        </svg>
-                        <textarea class="input__field" name="message" id="message" cols="30" rows="4" placeholder="Digite sua mensagem"></textarea>
-                    </div>
-
-                    <a href="" class="btn btn--square btn--block btn--purple btn--large form--btn text--center">Enviar mensagem</a>
-                  </form>
-            </div>
-        </section>
-        <!--end Contact Form-->
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="p+ bg--gray">
-                <div class="container">
-                    <div class="grid">
-                        <div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12 xs/text--center sm/text--center">
-                            <svg class="logo logo--white m">
+        </div>
+        <div id="menu__content" class="menu__content bg--white">
+            <header>
+                <div class="container pt pb">
+                    <div class="grid grid--middle">
+                        <div class="grid__col grid__col--4">
+                            <svg class="logo logo--purple-light">
                                 <use xlink:href="images/sprite.svg#logo-mergulhei"></use>
                             </svg>
-                        </div><div class="grid__col grid__col--8 sm/grid__col--12 xs/grid__col--12 text--right sm/text--center">
-                            <ul class="footer__list mb xs/text--center sm/text--center">
-                                <li class="footer__list-item">
-                                    <a class="link hover--purple-light text--white ml" href="#know-it">Entenda o Mergulhei</a>
-                                </li><li class="footer__list-item">
-                                    <a class="link hover--purple-light text--white ml" href="#how-works">Como funciona</a>
-                                </li><li class="footer__list-item">
-                                    <a class="link hover--purple-light text--white ml" href="#contact">Entre em contato</a>
-                                </li><li class="footer__list-item ml xs/d-n sm/d-n">
-                                    |
-                                </li><li class="footer__list-item">
-                                    <a class="link hover--purple-light text--white ml" href="">Cadastre-se</a>
-                                </li><li class="footer__list-item">
-                                    <a class="link hover--purple-light text--white ml" href="">Faça seu login</a>
-                                </li>
-                            </ul>
-                            <div class="text--small text--right text--gray-lighter xs/text--center sm/text--center">@2016 - Mergulhei. Todos os direitos reservados.</div>
+                        </div><div class="grid__col grid__col--8">
+                            <nav class="text--right">
+                                <a class="link text--gray-lighter hover--blue text--xsmall pr sm/d-n xs/d-n" data-anchor-link href="#know-it">O Mergulhei</a>
+                                <a class="link text--gray-lighter hover--blue text--xsmall pr sm/d-n xs/d-n" data-anchor-link href="#how-works">Como funciona</a>
+                                <a class="link text--gray-lighter hover--blue text--xsmall pr sm/d-n xs/d-n" data-anchor-link href="#contact">Contato</a>
+                                <a class="btn btn--colored sm/d-n xs/d-n" href="">Cadastro</a>
+                                <a class="btn btn--white margin__left sm/d-n xs/d-n" href="">Login</a>
+                                <a class="d-ib va--middle md/d-n lg/d-n menu__dragger" href="#">
+                                    <svg class="d-b icon--medium icon--blue">
+                                        <use xlink:href="images/sprite.svg#menu"></use>
+                                    </svg>
+                                </a>
+                            </nav>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+
+            </header>
+
+            <!-- Banner -->
+            <section class="banner">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__col grid__col--6 xs/grid__col--12">
+                            <div class="pb++ xs/text--center">
+                                <h2 class="banner--title pt+++">Ganhe dinheiro com seu conteúdo</h2>
+                                <p class="mb++">O Mergulhei ajuda você a monetizar seu site de forma automática, rápida e simples.</p>
+
+                                <a class="btn btn--medium btn--transparent mb xs/grid__col--12" href="#how-works">Como funciona</a>
+                                <a class="btn btn--medium btn--colored mb xs/grid__col--12" href="">Crie sua conta grátis</a>
+                            </div>
+                        </div><div class="grid__col grid__col--6 xs/grid__col--12">
+                            <canvas id="canvas" width="650" height="560" style="display: block; max-width: 100%;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim Banner -->
+
+            <!-- Clientes -->
+            <section class="bg--gray-lightest">
+                <div class="container p+">
+                    <h3 class="text--title mt++ mb+ text--center text--purple">Quem usa o Mergulhei recomenda</h3>
+                    <div class="grid">
+                        <div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
+                            <div class="card sm/mb xs/mb">
+                                <div class="card__image" style="background-image: url('/images/card-guilherme.png')"></div>
+                                <p class="p+">
+                                    “Depois que começamos a trabalhar com o Mergulhei conseguimos monetizar 80% dos nossos links com escalabilidade e velocidade.”
+                                </p>
+                                <p class="card__footer pb+">
+                                    Managing Director e Fundador do Pelando
+                                </p>
+                            </div>
+                        </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
+                            <div class="card sm/mb xs/mb">
+                                <div class="card__image" style="background-image: url('/images/card-guilherme.png')"></div>
+                                <p class="p+">
+                                    “Graças ao Mergulhei conseguimos ganhar dinheiro em todas as principais lojas do Brasil.”
+                                </p>
+                                <p class="card__footer pb+">
+                                    Managing Director e Fundador do Pelando
+                                </p>
+                            </div>
+                        </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
+                            <div class="card sm/mb xs/mb">
+                                <div class="card__image" style="background-image: url('/images/card-guilherme.png')"></div>
+                                <p class="p+">
+                                    “Depois que começamos a trabalhar com o Mergulhei conseguimos monetizar 80% dos nossos links com escalabilidade e velocidade.”
+                                </p>
+                                <p class="card__footer pb+">
+                                    Managing Director e Fundador do Pelando
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text--center p++">
+                        <ul class="sprite list--inline text--center md/p++ lg/p++">
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--meliuz"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--worldsense"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--pelando"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--cuponomize"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--vida-desconto"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--uai-desconto"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--melhor"></i></li>
+                            <li class="sprite__wrapper--clients"><i class="sprite__clients sprite__clients--1001"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim Clientes -->
+
+            <!--Entenda o Mergulhei-->
+            <section id="know-it">
+                <div class="container pt++ pb+++">
+                    <div class="timeline__header text--center">
+                        <svg class="icon--medium icon--purple">
+                            <use xlink:href="images/sprite.svg#anchor"></use>
+                        </svg>
+                        <h2 class="text--purple text--title mv">O que é o Mergulhei?</h2>
+                        <h3 class="text--subtitle mb++">O Mergulhei é uma ferramenta que ajuda produtores de conteúdo e publishers em geral a rentabilizar seu site.</h3>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline__line xs/d-n"></div>
+                        <div class="timeline__ball xs/d-n"></div>
+
+                        <div class="grid grid--middle grid--large">
+                            <div class="grid__col grid__col--6 xs/grid__col--12">
+                                <div class="pr+++ xs/p0 xs/text--center">
+                                    <svg class="icon--medium icon--purple">
+                                        <use xlink:href="images/sprite.svg#store"></use>
+                                    </svg>
+                                    <h3 class="text--subtitle mb++">Ganhe dinheiro divulgando produtos dos nossos parceiros no conteúdo do seu blog ou site sem alterar nada no layout.</h3>
+                                </div>
+                            </div><div class="grid__col grid__col--6 xs/d-n">
+                                <div class="text--center"><img src="images/img1.png"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline__line xs/d-n"></div>
+                        <div class="timeline__ball xs/d-n"></div>
+
+                        <div class="grid grid--middle grid--large">
+                            <div class="grid__col grid__col--6 xs/d-n">
+                                <div class="text--center"><img src="images/img2.png"></div>
+                            </div><div class="grid__col grid__col--6 xs/grid__col--12">
+                                <div class="pl+++ xs/p0 text--right xs/text--center">
+                                    <svg class="icon--medium icon--purple">
+                                        <use xlink:href="images/sprite.svg#wallet"></use>
+                                    </svg>
+                                    <h3 class="text--subtitle mb++">Todas as vezes que seus leitores clicarem no link do produto e realizarem a compra, você ganha uma comissão pela venda.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline__line xs/d-n"></div>
+                        <div class="timeline__ball xs/d-n"></div>
+
+                        <div class="grid grid--middle grid--large">
+                            <div class="grid__col grid__col--6 xs/grid__col--12">
+                                <div class="pr+++ xs/p0 xs/text--center">
+                                    <svg class="icon--medium icon--purple">
+                                        <use xlink:href="images/sprite.svg#wordpress"></use>
+                                    </svg>
+                                    <h3 class="text--subtitle mb++">O Mergulhei é compatível com Wordpress, Blogger e todas as outras plataformas. Basta copiar uma linha de código, colar no seu site e pronto!</h3>
+                                </div>
+                            </div><div class="grid__col grid__col--6 xs/d-n">
+                                <div class="text--center"><img src="images/img3.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text--center"><a class="btn btn--colored btn--large" href="">Crie sua conta. É grátis!</a></p>
+                    <p class="text--center mt++ mh++">
+                        <svg class="icon--medium icon--purple">
+                            <use xlink:href="images/sprite.svg#anchor"></use>
+                        </svg>
+                    </p>
+                </div>
+            </section>
+            <!--Fim Entenda-->
+
+            <!--Como funciona-->
+            <section id="how-works">
+                <div class="waves waves--gray"></div>
+                <div class="bg--gray-lightest pb+++">
+                    <div class="container">
+                        <h3 class="text--title text--purple text--center pt+++ pb">Ative o Mergulhei e deixa o resto com a gente!</h3>
+                        <h2 class="text--center text--caption text--purple mb+">Entenda como funciona</h2>
+
+                        <div class="grid">
+                            <div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
+                                <div class="circle--icon mha mb+ xs/mb text--center">
+                                    <svg class="icon--medium icon--purple icon--spaced">
+                                        <use xlink:href="images/sprite.svg#wrench"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="text--purple mb text--center">1. Ative o Mergulhei no seu site</h4>
+                                <p class="sm/text--small xs/text--small text--center mb++ sm/ph+++">Após criar sua conta no Mergulhei, você instala o JavaScript no seu site e pronto! Nós começamos a facilitar sua vida!</p>
+                            </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
+                                <div class="circle--icon mha mb+ xs/mb text--center">
+                                    <svg class="icon--medium icon--purple icon--spaced">
+                                        <use xlink:href="images/sprite.svg#link2"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="text--purple mb text--center">2. Adicione os links no seu conteúdo</h4>
+                                <p class="sm/text--small xs/text--small text--center mb++ sm/ph+++">Com o código do Mergulhei já instalado, você só precisa se preocupar em produzir conteúdos focados no perfil dos seus leitores e adicionar os links relacionados aos produtos ou lojas parceiras do Mergulhei.</p>
+                            </div><div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12">
+                                <div class="circle--icon mha mb+ xs/mb text--center">
+                                    <svg class="icon--medium icon--purple icon--spaced">
+                                        <use xlink:href="images/sprite.svg#receipt"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="text--purple mb text--center">3. Agora é só acompanhar as vendas</h4>
+                                <p class="sm/text--small xs/text--small text--center mb++ sm/ph+++">A mágica acontece quando seus leitores clicam em um link que o levará a alguma loja parceira do Mergulhei. Toda vez que esse clique se transforma em compra, o Mergulhei paga uma comissão a você pela venda. Simples assim! :)</p>
+                            </div>
+                        </div>
+
+                        <div class="text--center"><img src="/images/waves.png" alt="Ondas" /></div>
+                        <h3 class="text--title text--purple text--center pt+++ pb">Mais de 200 lojas parceiras</h3>
+
+                        <ul class="sprite list--inline text--center md/p++ lg/p++">
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--submarino"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--zattini"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--azul"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--walmart"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--americanas"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--mluiza"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--sephora"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--aliexpress"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--belezaweb"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--extra"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--pontofrio"></i></li>
+                            <li class="sprite__wrapper--partners"><i class="sprite__partners sprite__partners--natura"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="waves waves--white bg--gray-lightest"></div>
+            </section>
+            <!--Fim Como Funciona-->
+
+            <!--Contact form-->
+            <section id="contact">
+                <div class="container pt+++ pb++">
+                    <h3 class="text--title text--center text--purple mb">A gente adora conversar!</h3>
+                    <h2 class="text--caption text--center text--purple mb+">Entre em contato com a gente</h2>
+
+                    <form class="form">
+                        <div class="grid">
+                            <div class="grid__col grid__col--6 xs/grid__col--12">
+                                <div>
+                                    <div class="input mb+">
+                                        <svg class="input__icon icon--gray-lighter">
+                                            <use xlink:href="images/sprite.svg#user"></use>
+                                        </svg>
+                                        <input type="text" class="input__field" name="name" placeholder="Nome">
+                                    </div>
+                                </div>
+                            </div><div class="grid__col grid__col--6 xs/grid__col--12">
+                                <div>
+                                    <div class="input mb+">
+                                        <svg class="input__icon icon--gray-lighter">
+                                            <use xlink:href="images/sprite.svg#envelope"></use>
+                                        </svg>
+                                        <input type="text" class="input__field" name="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input mb">
+                            <svg class="input__icon icon--gray-lighter">
+                                <use xlink:href="images/sprite.svg#pencil"></use>
+                            </svg>
+                            <textarea class="input__field" name="message" id="message" cols="30" rows="4" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+
+                        <a href="" class="btn btn--square btn--block btn--purple btn--large form--btn text--center">Enviar mensagem</a>
+                    </form>
+                </div>
+            </section>
+            <!--end Contact Form-->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="p+ bg--gray">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="grid__col grid__col--4 sm/grid__col--12 xs/grid__col--12 xs/text--center sm/text--center">
+                                <svg class="logo logo--white m">
+                                    <use xlink:href="images/sprite.svg#logo-mergulhei"></use>
+                                </svg>
+                            </div><div class="grid__col grid__col--8 sm/grid__col--12 xs/grid__col--12 text--right sm/text--center">
+                                <ul class="footer__list mb xs/text--center sm/text--center">
+                                    <li class="footer__list-item">
+                                        <a class="link hover--purple-light text--white ml" href="#know-it">Entenda o Mergulhei</a>
+                                    </li><li class="footer__list-item">
+                                        <a class="link hover--purple-light text--white ml" href="#how-works">Como funciona</a>
+                                    </li><li class="footer__list-item">
+                                        <a class="link hover--purple-light text--white ml" href="#contact">Entre em contato</a>
+                                    </li><li class="footer__list-item ml xs/d-n sm/d-n">
+                                        |
+                                    </li><li class="footer__list-item">
+                                        <a class="link hover--purple-light text--white ml" href="">Cadastre-se</a>
+                                    </li><li class="footer__list-item">
+                                        <a class="link hover--purple-light text--white ml" href="">Faça seu login</a>
+                                    </li>
+                                </ul>
+                                <div class="text--small text--right text--gray-lighter xs/text--center sm/text--center">@2016 - Mergulhei. Todos os direitos reservados.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
         <!-- end Footer -->
-        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script src="javascript/createjs.js"></script>
         <script src="javascript/animacao-blogueiro.js?1457637791634"></script>
+        <script src="javascript/bling.js"></script>
         <script src="javascript/main.js"></script>
+        <script src="javascript/snap.js"></script>
+        <script src="javascript/zenscroll.js"></script>
     </body>
 </html>
